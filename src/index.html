@@ -2,12 +2,19 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+
     <title>Hello World!</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="./renderer.js"></script>
+    <script src="jquery.js"></script>
+
   </head>
   <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
+    <button class="peers">Show Peers</button>
+    <div class="messages"></div>
+    <form>
+      <textarea name="msg"></textarea>
+      <input type="submit" value="Send" />
+    </form>
+    <script src="renderer.js"></script>
   </body>
 </html>
