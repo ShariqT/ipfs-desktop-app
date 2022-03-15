@@ -30,7 +30,7 @@ ipcRenderer.on('start2', async function(evt){
             evt.preventDefault();
             let m = $('textarea[name=msg]').val();
             console.log(m)
-            ipfsd.api.pubsub.publish('dev', m)
+            ipfsd.api.pubsub.publish('com.lob.www:dtwitter-poc', m)
         })
         $('.peers').on('click', async function(){
             let peers = await ipfsd.api.swarm.peers()
